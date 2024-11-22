@@ -1,4 +1,3 @@
-import React from 'react';
 import { useQuiz } from "../contexts/QuizContext";
 
 export default function Question ({ children })

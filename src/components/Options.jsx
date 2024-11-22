@@ -1,4 +1,3 @@
-import React from 'react';
 import { useQuiz } from "../contexts/QuizContext";
 
 export default function Options ()
@@ -21,7 +20,7 @@ export default function Options ()
             }
             key={`${i}-${option}`}
             onClick=
-            {(e) => dispatch(
+            {() => dispatch(
               {
                 type: 'newAnswer',
                 payload: i, //индекс кнопки соответсвует индексу в массисе ответов (options)
